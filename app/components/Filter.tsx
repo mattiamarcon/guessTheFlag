@@ -28,7 +28,6 @@ function Filter({elements,handleFilter}:propType) {
                     setText(e.target.value);
                 }}
                 placeholder='Filtra elementi' />
-           
         </>
     )
 }
