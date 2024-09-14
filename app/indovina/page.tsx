@@ -96,7 +96,7 @@ function CheckFlag() {
             <img src={winner?.bandiera} alt="" className='h-32 md:h-48 mx-auto border-black border-2' />
             <div className='rounded p-5 grid md:grid-cols-2 grid-rows-2 md:border-4 border-black w-full lg:w-3/4 mx-auto gap-5 items-center justify-center my-10 md:bg-orange-400'>
                 {toCheck.map(nz=>(
-                    <div className="mx-auto rounded-md p-8 h-full md:py-14 border-4 border-black w-full text-xl text-center font-semibold break-words cursor-pointer bg-white max-md:bg-orange-400" key={nz.nome} onClick={()=>checkAnswer(nz.nome)}>{nz.nome}</div>
+                    <div className="mx-auto rounded-md p-5 h-full md:py-14 border-4 border-black w-full text-xl text-center font-semibold break-words cursor-pointer bg-white max-md:bg-orange-400" key={nz.nome} onClick={()=>checkAnswer(nz.nome)}>{nz.nome}</div>
                 ))}          
             </div>
             {display && <MyDialog messaggio={creaMessaggio} restart={restart} />} 
